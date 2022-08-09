@@ -23,6 +23,7 @@ public class Main {
 		System.out.print("Preco: ");
 		product.Price = sc.nextDouble();
 		 
+		System.out.println(product);
 		
 		sc.close();
 	}
