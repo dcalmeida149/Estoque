@@ -25,6 +25,18 @@ public class Main {
 		 
 		System.out.println(product);
 		
+		System.out.print("\n\nEntre com a quantidade de produtos a adicionar: ");
+		int qtde = sc.nextInt();
+		product.addProducts(qtde);
+		
+		System.out.printf("\n\nEstoque atualizado: " + product);
+		
+		System.out.print("\n\nEntre com a quantidade de produtos a remover: ");
+		qtde = sc.nextInt();
+		product.removeProducts(qtde);
+		
+		System.out.printf("\n\nEstoque atualizado: " + product);
+		
 		sc.close();
 	}
 
