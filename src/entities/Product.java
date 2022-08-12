@@ -24,6 +24,6 @@ public class Product {
 				+ quantity
 				+ " Unidades ,"
 				+ "Valor estoque: "
-				+ String.format("%.2f",TotalValueInStock());
+				+ String.format("%.2f",TotalValueInStock()); //teste push
 	}
 }
