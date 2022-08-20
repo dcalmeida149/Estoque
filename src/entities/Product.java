@@ -1,16 +1,21 @@
 package entities;
 
 public class Product {
-	public String name;
-	public double Price;
-	public int quantity;
+	private String name;
+	private double Price;
+	private int quantity;
 	
 	public Product(String name, double Price, int quantity) {
 		this.name = name;
 		this.Price = Price;
 		this.quantity = quantity;
 	}
-	
+	public String getName() { // aula 79 - - encapsulamento
+		return name;
+	}
+	public void setName(String name) { //aula 78 - encapsulamento
+		this.name = name;
+	}
 	public double TotalValueInStock() {
 		return Price * quantity;
 	}
